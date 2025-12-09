@@ -1,3 +1,5 @@
+![TM1638 Module](https://img.shields.io/badge/Module-TM1638-blue) ![FPGA-CycloneIV](https://img.shields.io/badge/FPGA-EP4CE6E22-green) ![Verilog](https://img.shields.io/badge/Language-Verilog-orange)
+
 # FPGA TM1638 Controller
 
 A Verilog-based driver and controller for the TM1638 LED & Key module, designed for FPGA implementation (tested on Altera/Intel EP4CE6E22 Cyclone IV FPGA).
@@ -6,13 +8,11 @@ A Verilog-based driver and controller for the TM1638 LED & Key module, designed 
 
 The TM1638 is a popular and inexpensive 8-digit 7-segment LED display module with 8 LEDs and 8 push buttons. This project provides a complete FPGA controller implementation that allows you to easily interface with TM1638 modules in your FPGA projects.
 
-![TM1638 Module](https://img.shields.io/badge/Module-TM1638-blue) ![FPGA-CycloneIV](https://img.shields.io/badge/FPGA-EP4CE6E22-green) ![Verilog](https://img.shields.io/badge/Language-Verilog-orange)
-
 ## 📱 Screenshots
 
 <div align="center">
   <img src="./ScreenShoots/demo.jpg" width="50%" /> <br/>
-  <img src="./ScreenShoots/dark.mp4" width="50%" />
+  <img src="./ScreenShoots/demo.mp4" width="50%" />
 </div>
 
 ## ✨ Features
