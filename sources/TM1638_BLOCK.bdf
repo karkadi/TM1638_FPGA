@@ -1,0 +1,289 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 104 120 272 136)
+	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
+	(text "CLK_50MHZ" (rect 5 0 67 10)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 48 120 104 136))
+)
+(pin
+	(input)
+	(rect 104 136 272 152)
+	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
+	(text "RST_N" (rect 5 0 35 10)(font "DejaVu Sans Condensed" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 16)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 48 136 104 152))
+)
+(pin
+	(output)
+	(rect 512 136 688 152)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "TM1638_STB" (rect 90 0 151 10)(font "DejaVu Sans Condensed" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 688 136 752 152))
+)
+(pin
+	(output)
+	(rect 512 152 688 168)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "TM1638_CLK" (rect 90 0 152 10)(font "DejaVu Sans Condensed" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 688 152 752 168))
+)
+(pin
+	(bidir)
+	(rect 512 168 688 184)
+	(text "BIDIR" (rect 1 0 25 9)(font "Arial" (font_size 6)))
+	(text "TM1638_DIO" (rect 90 0 153 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 56 4)(pt 78 4))
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 56 12)(pt 78 12))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 78 12)(pt 82 8))
+		(line (pt 56 4)(pt 52 8))
+		(line (pt 52 8)(pt 56 12))
+	)
+	(text "VCC" (rect 4 7 24 16)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 688 168 752 184))
+)
+(symbol
+	(rect 288 96 504 336)
+	(text "tm1638_controller" (rect 5 0 93 10)(font "Arial" ))
+	(text "inst" (rect 8 224 25 234)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK_IN" (rect 0 0 38 10)(font "Arial" ))
+		(text "CLK_IN" (rect 21 27 59 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RST_IN" (rect 0 0 38 10)(font "Arial" ))
+		(text "RST_IN" (rect 21 43 59 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "DIGIT_0[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_0[3..0]" (rect 21 59 88 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "DIGIT_1[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_1[3..0]" (rect 21 75 88 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "DIGIT_2[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_2[3..0]" (rect 21 91 88 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "DIGIT_3[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_3[3..0]" (rect 21 107 88 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "DIGIT_4[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_4[3..0]" (rect 21 123 88 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "DIGIT_5[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_5[3..0]" (rect 21 139 88 149)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "DIGIT_6[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_6[3..0]" (rect 21 155 88 165)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "DIGIT_7[3..0]" (rect 0 0 67 10)(font "Arial" ))
+		(text "DIGIT_7[3..0]" (rect 21 171 88 181)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "DOTS[7..0]" (rect 0 0 55 10)(font "Arial" ))
+		(text "DOTS[7..0]" (rect 21 187 76 197)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "LEDS[7..0]" (rect 0 0 54 10)(font "Arial" ))
+		(text "LEDS[7..0]" (rect 21 203 75 213)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "KEYS[7..0]" (rect 0 0 55 10)(font "Arial" ))
+		(text "KEYS[7..0]" (rect 149 27 204 37)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "TM1638_STB" (rect 0 0 63 10)(font "Arial" ))
+		(text "TM1638_STB" (rect 142 43 205 53)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "TM1638_CLK" (rect 0 0 64 10)(font "Arial" ))
+		(text "TM1638_CLK" (rect 141 59 205 69)(font "Arial" ))
+		(line (pt 216 64)(pt 200 64))
+	)
+	(port
+		(pt 216 80)
+		(bidir)
+		(text "TM1638_DIO" (rect 0 0 63 10)(font "Arial" ))
+		(text "TM1638_DIO" (rect 141 75 204 85)(font "Arial" ))
+		(line (pt 216 80)(pt 200 80))
+	)
+	(parameter
+		"USE_BIN_MODE"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"DISPLAY_MODE"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"DISPLAY_BRIGHTNESS"
+		"7"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 200 224))
+	)
+	(annotation_block (parameter)(rect 288 24 544 80))
+)
+(connector
+	(pt 504 144)
+	(pt 512 144)
+)
+(connector
+	(pt 504 160)
+	(pt 512 160)
+)
+(connector
+	(pt 272 128)
+	(pt 288 128)
+)
+(connector
+	(pt 288 144)
+	(pt 272 144)
+)
+(connector
+	(pt 504 176)
+	(pt 512 176)
+)
+(connector
+	(pt 288 304)
+	(pt 272 304)
+	(bus)
+)
+(connector
+	(pt 272 304)
+	(pt 272 352)
+	(bus)
+)
+(connector
+	(pt 504 128)
+	(pt 768 128)
+	(bus)
+)
+(connector
+	(pt 768 128)
+	(pt 768 352)
+	(bus)
+)
+(connector
+	(pt 272 352)
+	(pt 768 352)
+	(bus)
+)
