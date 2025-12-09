@@ -8,11 +8,16 @@ A Verilog-based driver and controller for the TM1638 LED & Key module, designed 
 
 The TM1638 is a popular and inexpensive 8-digit 7-segment LED display module with 8 LEDs and 8 push buttons. This project provides a complete FPGA controller implementation that allows you to easily interface with TM1638 modules in your FPGA projects.
 
-## 📱 Screenshots
+## 📱 Demo
 
 <div align="center">
-  <img src="./ScreenShoots/demo.jpg" width="50%" /> <br/>
-  <img src="./ScreenShoots/demo.mp4" width="50%" />
+  <img src="./ScreenShoots/demo.jpg" width="50%" alt="Demo Photo" />
+  <br/>
+  <video src="./ScreenShoots/demo.mp4" width="50%" controls muted loop autoplay>
+    Your browser does not support the video tag.
+  </video>
+  <br/>
+  <em>Demo showing decimal counter running on TM1638 module</em>
 </div>
 
 ## ✨ Features
@@ -27,7 +32,7 @@ The TM1638 is a popular and inexpensive 8-digit 7-segment LED display module wit
 
 ### FPGA Board
 <div align="center">
-  <img src="./ScreenShoots/fpga_board.jpg" width="80%" />
+  <img src="./ScreenShoots/fpga_board.jpg" width="80%" alt="FPGA Board" />
 </div>
 
 - Altera/Intel Cyclone IV EP4CE6E22 FPGA (or compatible)
@@ -36,16 +41,16 @@ The TM1638 is a popular and inexpensive 8-digit 7-segment LED display module wit
 
 ### TM1638 Module
 <div align="center">
-  <img src="./ScreenShoots/TM1638_LED&KEYS.jpg" width="80%" />
+  <img src="./ScreenShoots/TM1638_LED&KEYS.jpg" width="80%" alt="TM1638 Module" />
 </div>
 - Standard TM1638 LED & Key module (commonly available on AliExpress, eBay, etc.)
 - Operating voltage: 3.3V or 5V
 
-### Level shifters
+### Level Shifter (Optional)
 <div align="center">
-  <img src="./ScreenShoots/LevelShifter.jpg" width="30%" />
+  <img src="./ScreenShoots/LevelShifter.jpg" width="30%" alt="Level Shifter" />
 </div>
-3.3V-5V 4 Channels Logic Level Converter Bi-Directional Shifter Module
+3.3V-5V 4 Channels Logic Level Converter Bi-Directional Shifter Module (required if TM1638 module operates at 5V)
 
 ### Connections
 | TM1638 Pin | FPGA Pin | Description              |
@@ -55,6 +60,8 @@ The TM1638 is a popular and inexpensive 8-digit 7-segment LED display module wit
 | STB        | GPIO     | Chip select              |
 | VCC        | 3.3V/5V  | Power (check module)     |
 | GND        | GND      | Ground                   |
+
+**Note**: If your TM1638 module operates at 5V, use level shifters between FPGA (3.3V) and TM1638 (5V) for CLK, DIO, and STB lines.
 
 ## 🚀 Quick Start
 
@@ -74,6 +81,12 @@ TM1638-FPGA/
 │   ├── TM1638_FPGA.qpf         # Quartus project file
 │   ├── TM1638_FPGA.qsf         # Quartus settings file
 │   └── TM1638_BLOCK.bdf        # Quartus design file
+├── ScreenShoots/
+│   ├── demo.jpg                # Demo photo
+│   ├── demo.mp4                # Demo video
+│   ├── fpga_board.jpg          # FPGA board photo
+│   ├── TM1638_LED&KEYS.jpg     # TM1638 module photo
+│   └── LevelShifter.jpg        # Level shifter photo
 └── README.md
 ```
 
