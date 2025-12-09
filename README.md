@@ -13,9 +13,7 @@ The TM1638 is a popular and inexpensive 8-digit 7-segment LED display module wit
 <div align="center">
   <img src="./ScreenShoots/demo.jpg" width="50%" alt="Demo Photo" />
   <br/>
-  <video src="./ScreenShoots/demo.mp4" width="50%" controls muted loop autoplay>
-    Your browser does not support the video tag.
-  </video>
+  <img src="./ScreenShoots/demo.gif" width="50%" alt="Demo Photo" />
   <br/>
   <em>Demo showing decimal counter running on TM1638 module</em>
 </div>
